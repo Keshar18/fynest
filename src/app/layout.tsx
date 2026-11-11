@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
+import AppShell from "../components/AppShell";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,12 +18,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "FYNEST | Your Venture. Your Command Center.",
+    default: "FYNEST | Your Venture. Your Workspace.",
     template: "%s | FYNEST",
   },
   description:
-    "FYNEST is an intelligent operating system for founders and startup teams. Manage documents, meetings, people and everything your venture needs.",
-  applicationName: "FYNEST",
+    "FYNEST is an intelligent workspace for founders and startup teams.",
 };
 
 export default function RootLayout({
@@ -31,11 +31,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${manrope.variable}`}
-    >
-      <body>{children}</body>
+    <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
+      <body>
+        <AppShell>{children}</AppShell>
+      </body>
     </html>
   );
 }

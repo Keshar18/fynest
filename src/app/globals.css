@@ -6,38 +6,36 @@
    Version 1.0
 ================================= */
 
+
 :root {
-  /* Brand Colors */
-  --fynest-black: #030407;
-  --fynest-blue: #1558C9;
-  --fynest-lime: #D4FF24;
+  --fynest-black: #06110C;
+  --fynest-green: #06110C;
+  --fynest-red: #A31C1B;
+  --fynest-charcoal: #171717;
 
-  /* Backgrounds */
-  --fynest-sidebar: #0D1017;
-  --fynest-surface: #111318;
-  --fynest-elevated: #191D26;
+  --fynest-sidebar: #171717;
+  --fynest-surface: #171717;
+  --fynest-elevated: #222222;
 
-  /* Text */
   --fynest-text: #F5F5F5;
-  --fynest-muted: #A1A1AA;
+  --fynest-muted: #A3A3A3;
+  --fynest-border: #303030;
 
-  /* Borders */
-  --fynest-border: #282D37;
-
-  /* Status Colors */
   --fynest-success: #22C55E;
   --fynest-warning: #F59E0B;
-  --fynest-danger: #EF4444;
+  --fynest-danger: #A31C1B;
 
-  /* Typography */
   --fynest-font: var(--font-inter), Arial, sans-serif;
 }
 
+
 /* Tailwind Theme Integration */
+
 @theme inline {
   --color-fynest-black: var(--fynest-black);
-  --color-fynest-blue: var(--fynest-blue);
-  --color-fynest-lime: var(--fynest-lime);
+  --color-fynest-green: var(--fynest-green);
+  --color-fynest-red: var(--fynest-red);
+  --color-fynest-charcoal: var(--fynest-charcoal);
   --color-fynest-sidebar: var(--fynest-sidebar);
   --color-fynest-surface: var(--fynest-surface);
   --color-fynest-elevated: var(--fynest-elevated);
@@ -45,6 +43,7 @@
   --color-fynest-muted: var(--fynest-muted);
   --color-fynest-border: var(--fynest-border);
 }
+
 
 /* Global Reset */
 * {
