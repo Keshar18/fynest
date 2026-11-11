@@ -30,7 +30,7 @@
   --fynest-danger: #EF4444;
 
   /* Typography */
-  --fynest-font: Arial, Helvetica, sans-serif;
+  --fynest-font: var(--font-inter), Arial, sans-serif;
 }
 
 /* Tailwind Theme Integration */
